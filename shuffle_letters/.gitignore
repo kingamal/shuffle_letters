@@ -1,0 +1,32 @@
+# Virtual environment
+venv/
+env/
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+# Python specific
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info
+*.eggs
+# IDE specific (np. dla PyCharm, VSCode itp.)
+.idea/
+.vscode/
+# Environment settings
+.env
+*.env
+# Static files
+staticfiles/
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.coverage.*
+.cache
