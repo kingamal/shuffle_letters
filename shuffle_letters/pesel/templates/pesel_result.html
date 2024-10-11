@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wynik walidacji PESEL</title>
+</head>
+
+<body>
+    <h1>Wynik walidacji PESEL</h1>
+    {% if is_valid %}
+    <p>Numer PESEL jest poprawny.</p>
+    <p>Data urodzenia: {{ birth_date }}</p>
+    <p>Płeć: {{ gender }}</p>
+    {% else %}
+    <p>Numer PESEL jest niepoprawny.</p>
+    {% endif %}
+    <a href="{% url 'pesel_view' %}">Sprawdź inny PESEL</a>
+</body>
+
+</html>
